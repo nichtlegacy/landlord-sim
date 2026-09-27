@@ -8,6 +8,7 @@
 <br>
 Enter any game state, pick your table's house rules and play thousands of continuations in the browser.
 
+[![Live: landlord.nichtlegacy.com](https://img.shields.io/badge/Live-landlord.nichtlegacy.com-166534)](https://landlord.nichtlegacy.com)
 [![CI](https://github.com/nichtlegacy/landlord-sim/actions/workflows/ci.yml/badge.svg)](https://github.com/nichtlegacy/landlord-sim/actions/workflows/ci.yml)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](tsconfig.json)
 [![React 19](https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white)](src/ui)
@@ -15,9 +16,9 @@ Enter any game state, pick your table's house rules and play thousands of contin
 [![Languages: EN | DE](https://img.shields.io/badge/UI-English%20%7C%20Deutsch-166534)](src/ui/i18n)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-[Overview](#overview) • [Features](#features) • [Quick start](#quick-start) • [Command line](#command-line) • [How it works](#how-it-works) • [Validation](#validation) • [Extending](#extending) • [Docs](docs/README.md)
+[Website](https://landlord.nichtlegacy.com) • [Overview](#overview) • [Features](#features) • [Quick start](#quick-start) • [Command line](#command-line) • [How it works](#how-it-works) • [Validation](#validation) • [Extending](#extending) • [Docs](docs/README.md)
 
-<img src=".github/images/game.png" width="860" alt="The Game tab: the 52-space Grand board with an example end game on the left, win chances for Ada, Ben and Cleo with confidence intervals and the run controls on the right">
+<a href="https://landlord.nichtlegacy.com"><img src=".github/images/game.png" width="860" alt="The Game tab: the 52-space Grand board with an example end game on the left, win chances for Ada, Ben and Cleo with confidence intervals and the run controls on the right"></a>
 
 </div>
 
@@ -67,7 +68,11 @@ chances ([related work](docs/related-work.md)). Landlord does, and it is:
 
 ## Quick start
 
-Requires Node.js 22.18 or newer.
+Nothing to install: open **[landlord.nichtlegacy.com](https://landlord.nichtlegacy.com)**. The
+example end game opens with a precomputed result; everything else is simulated in
+your browser.
+
+To run it locally you need Node.js 22.18 or newer.
 
 ```bash
 git clone https://github.com/nichtlegacy/landlord-sim.git
@@ -89,7 +94,9 @@ npm run preview      # serve the production build on port 5180
 
 ### Self-hosting
 
-The app is a static bundle; any static host works. The optional Node server in
+The app is a static bundle; any static host works. The public site is deployed to
+GitHub Pages by [`pages.yml`](.github/workflows/pages.yml): `npm run bake` precomputes
+the example end game into `public/precomputed/`, then `npm run build`. The optional Node server in
 [`server/`](server) also stores finished results so returning visitors do not
 recompute them:
 

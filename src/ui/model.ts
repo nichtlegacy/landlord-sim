@@ -103,7 +103,8 @@ export function loadSetup(): Setup {
       if (EDITIONS[s.editionId] && s.scenario?.players?.length) return s;
     }
   } catch { /* ignore broken storage */ }
-  return presetNewGame('classic');
+  // first visit: the example end game, whose result is baked into the static build (npm run bake)
+  return presetExample();
 }
 export const saveSetup = (s: Setup) => localStorage.setItem(KEY, JSON.stringify(s));
 

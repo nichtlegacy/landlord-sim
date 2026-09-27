@@ -6,12 +6,82 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
-    <title>Landlord: who would have won?</title>
-    <meta name="description" content="Enter a property-trading board game position, pick house rules and simulate thousands of continuations in the browser to see who wins how often." />
+    <title>Landlord: who would have won? Monte Carlo simulator for property-trading board games</title>
+    <meta name="description" content="Enter any property-trading board game position, pick your house rules and simulate thousands of continuations in the browser: win chances with confidence intervals, trading bots, a trade check and replays. Free and open source." />
+    <link rel="canonical" href="https://landlord.nichtlegacy.com/" />
+    <meta name="author" content="nichtlegacy" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Landlord" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:url" content="https://landlord.nichtlegacy.com/" />
+    <meta property="og:title" content="Landlord: who would have won?" />
+    <meta property="og:description" content="Enter a board game position, pick your house rules and simulate thousands of continuations in the browser. Win chances, trading bots, trade check, replay." />
+    <meta property="og:image" content="https://landlord.nichtlegacy.com/og.png" />
+    <meta property="og:image:secure_url" content="https://landlord.nichtlegacy.com/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Landlord beside the question “Who would have won?”: win bars for three players and the 52-space board of the example end game." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Landlord: who would have won?" />
+    <meta name="twitter:description" content="Win chances from any property-trading board game position, simulated in the browser." />
+    <meta name="twitter:image" content="https://landlord.nichtlegacy.com/og.png" />
+    <meta name="twitter:image:alt" content="Landlord beside the question “Who would have won?”: win bars for three players and the 52-space board of the example end game." />
+
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icon-32.png" type="image/png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://landlord.nichtlegacy.com/#website",
+            "url": "https://landlord.nichtlegacy.com/",
+            "name": "Landlord",
+            "inLanguage": ["en", "de"],
+            "publisher": { "@id": "https://landlord.nichtlegacy.com/#author" }
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://landlord.nichtlegacy.com/#app",
+            "name": "Landlord",
+            "url": "https://landlord.nichtlegacy.com/",
+            "description": "Monte Carlo simulator for property-trading board games: win chances from any game state, with house rules, trading bots, a trade check and replays.",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Any (web browser)",
+            "inLanguage": ["en", "de"],
+            "isAccessibleForFree": true,
+            "license": "https://opensource.org/licenses/MIT",
+            "codeRepository": "https://github.com/nichtlegacy/landlord-sim",
+            "image": "https://landlord.nichtlegacy.com/og.png",
+            "screenshot": "https://raw.githubusercontent.com/nichtlegacy/landlord-sim/main/.github/images/game.png",
+            "featureList": [
+              "Win chances with 95% confidence intervals from any game state",
+              "18 switchable house rules and presets",
+              "Bots that trade, bid, build and mortgage",
+              "Trade check: change in win chance, paired game by game",
+              "Replay of typical games, share links, English and German"
+            ],
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "author": { "@id": "https://landlord.nichtlegacy.com/#author" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://landlord.nichtlegacy.com/#author",
+            "name": "nichtlegacy",
+            "url": "https://github.com/nichtlegacy",
+            "sameAs": ["https://github.com/nichtlegacy"]
+          }
+        ]
+      }
+    </script>
     <script>
       // before first paint: theme (light unless dark was chosen) and language (saved, else the browser's)
       try {

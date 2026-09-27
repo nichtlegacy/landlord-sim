@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- Source of public/og.png (1200×630). Render: scripts/og/render.sh -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: Geist; src: url(../../node_modules/@fontsource-variable/geist/files/geist-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body { font-family: Geist, sans-serif; color: #171717; background: #f6f7f5; position: relative; }
+  .board { position: absolute; right: -70px; top: 35px; width: 600px; height: 600px; border-radius: 10px;
+    box-shadow: 0 30px 70px rgb(0 0 0 / 0.22), 0 4px 14px rgb(0 0 0 / 0.12); transform: rotate(-7deg); }
+  .text { position: absolute; left: 72px; top: 70px; width: 560px; }
+  .brand { display: flex; align-items: center; gap: 16px; font-size: 34px; font-weight: 700; letter-spacing: -0.01em; }
+  .brand svg { width: 56px; height: 56px; }
+  h1 { margin-top: 44px; font-size: 64px; line-height: 1.02; font-weight: 800; letter-spacing: -0.035em; }
+  p { margin-top: 20px; font-size: 25px; line-height: 1.35; color: #525252; }
+  .bars { margin-top: 36px; display: grid; grid-template-columns: 70px 1fr 74px; gap: 10px 14px; align-items: center; width: 470px; font-size: 21px; }
+  .track { height: 12px; border-radius: 6px; background: #e5e5e5; overflow: hidden; }
+  .fill { height: 100%; border-radius: 6px; }
+  .val { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+  <img class="board" src="board.png" alt="">
+  <div class="text">
+    <div class="brand">
+      <svg viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" rx="7" fill="#166534"/><path d="M8 15.5 16 8.5l8 7M10.5 14v9.5h11V14" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="14.3" y="17.5" width="3.4" height="6" rx=".6" fill="#fff"/></svg>
+      Landlord
+    </div>
+    <h1>Who would have won?</h1>
+    <p>Enter any board game position, pick your house rules and simulate thousands of continuations in the browser.</p>
+    <div class="bars">
+      <span>Ada</span><div class="track"><div class="fill" style="width:74.4%;background:#7c3aed"></div></div><span class="val">74.4%</span>
+      <span>Cleo</span><div class="track"><div class="fill" style="width:25.3%;background:#0f9488"></div></div><span class="val">25.3%</span>
+      <span>Ben</span><div class="track"><div class="fill" style="width:0.6%;background:#0a72ef"></div></div><span class="val">0.3%</span>
+    </div>
+  </div>
+</body>
+</html>

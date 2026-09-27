@@ -1,4 +1,4 @@
-// Client for the server-side result cache (see vite.config.ts).
+// Client for the result cache: the optional server (see vite.config.ts) or baked static files.
 
 /** 64-bit FNV-1a as hex; crypto.subtle is unavailable on plain-http LAN addresses */
 export function hashKey(text: string): string {
@@ -20,14 +20,24 @@ export type CacheKind = 'result' | 'variants' | 'sensitivity';
  */
 export const ENGINE_VERSION = 7;
 
-export async function cacheGet<T>(kind: CacheKind, key: string): Promise<T | null> {
+/** a result from `url` if it is there and from this engine version, else null */
+async function fetchEntry<T>(url: string, cache: RequestCache): Promise<T | null> {
   try {
-    const res = await fetch(`/api/cache/${kind}/${key}`, { cache: 'no-store' });
+    const res = await fetch(url, { cache });
     const data = res.ok ? await res.json() : null;
     return data && data.v === ENGINE_VERSION ? (data as T) : null;
   } catch {
-    return null; // no cache server (e.g. static hosting): simply compute
+    return null;
   }
+}
+
+/**
+ * The cache server first; then results baked into the static build (`npm run bake`, used on
+ * GitHub Pages where there is no server). Without either, the browser simply computes.
+ */
+export async function cacheGet<T>(kind: CacheKind, key: string): Promise<T | null> {
+  return (await fetchEntry<T>(`/api/cache/${kind}/${key}`, 'no-store'))
+    ?? (await fetchEntry<T>(`${import.meta.env.BASE_URL}precomputed/${kind}/${key}.json`, 'default'));
 }
 
 /** the server accepts up to 8 MB (server/cache.ts); bigger results are not worth the upload */

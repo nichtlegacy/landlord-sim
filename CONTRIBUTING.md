@@ -26,6 +26,7 @@ host firewall is active, allow port 5180 from your local subnet.
 | `npm run preview` | Serves `dist/` on port 5180 |
 | `npm run sim -- …` | CLI: example end game, `--replay SEED`, `--audit N`, `--fuzz N`, `--validate friedman\|seats\|crn`, `--sensitivity`, `--games`, `--seed`, `--profiles` |
 | `npm run bench` | Games per second and a result fingerprint per setup |
+| `npm run bake` | Precompute the example end game into `public/precomputed/` (used by the GitHub Pages build) |
 
 Production image: `docker build -t landlord .` runs the tests and the build, and
 the image serves the app and the result cache on port 3000 with data in `/data`

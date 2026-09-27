@@ -32,7 +32,8 @@
     "sim": "tsx src/sim/cli.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "bench": "tsx src/sim/bench.ts"
+    "bench": "tsx src/sim/bench.ts",
+    "bake": "tsx src/sim/bake.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.3",
