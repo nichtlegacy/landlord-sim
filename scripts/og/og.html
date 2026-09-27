@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Source of public/og.png (1200×630). Render: scripts/og/render.sh -->
+<!-- Source of public/og.png (1200×630) and, with ?social, the GitHub social preview (1280×640). Render: scripts/og/render.sh -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -19,9 +19,15 @@
   .track { height: 12px; border-radius: 6px; background: #e5e5e5; overflow: hidden; }
   .fill { height: 100%; border-radius: 6px; }
   .val { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+  /* GitHub social preview: 1280×640, a little more room on both sides */
+  body.social { width: 1280px; height: 640px; }
+  body.social .text { left: 88px; top: 74px; }
+  body.social .board { right: -40px; top: 36px; }
 </style>
+<script>if (location.search.includes('social')) document.documentElement.style.cssText = 'width:1280px;height:640px';</script>
 </head>
 <body>
+  <script>if (location.search.includes('social')) document.body.classList.add('social');</script>
   <img class="board" src="board.png" alt="">
   <div class="text">
     <div class="brand">
