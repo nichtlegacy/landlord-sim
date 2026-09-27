@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    <title>Landlord: who would have won?</title>
+    <meta name="description" content="Enter a property-trading board game position, pick house rules and simulate thousands of continuations in the browser to see who wins how often." />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script>
+      // before first paint: theme (light unless dark was chosen) and language (saved, else the browser's)
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem('landlord:theme') === 'dark' ? 'dark' : 'light';
+        const lang = localStorage.getItem('landlord:lang') || (navigator.language || 'en').slice(0, 2);
+        document.documentElement.lang = lang === 'de' ? 'de' : 'en';
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <h1>Landlord: who would have won?</h1>
+      <p>Monte Carlo simulator for property-trading board games. Enter a game state, pick house rules and compute in the browser who wins how often. The page needs JavaScript to run the simulation.</p>
+    </noscript>
+    <script type="module" src="/src/ui/main.tsx"></script>
+  </body>
+</html>

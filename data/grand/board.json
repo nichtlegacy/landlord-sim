@@ -1,0 +1,949 @@
+{
+ "name": "Grand",
+ "currency": "$",
+ "num_spaces": 52,
+ "side_length": 14,
+ "corners": [
+  0,
+  13,
+  26,
+  39
+ ],
+ "start_money": 2500,
+ "go_salary": 200,
+ "jail_index": 13,
+ "go_to_jail_index": 39,
+ "jail_fine": 50,
+ "max_jail_turns": 3,
+ "mortgage_interest": 0.1,
+ "building_sell_ratio": 0.5,
+ "rent_index_meaning": [
+  "site_only",
+  "1_house",
+  "2_houses",
+  "3_houses",
+  "4_houses",
+  "hotel",
+  "skyscraper"
+ ],
+ "unimproved_multiplier": {
+  "all_but_one": 2,
+  "all": 3
+ },
+ "supply": {
+  "houses": 32,
+  "hotels": 12,
+  "skyscrapers": 8,
+  "depots": 4,
+  "bus_tickets": 16,
+  "chance": 16,
+  "community_chest": 16
+ },
+ "groups": {
+  "brown": [
+   1,
+   3,
+   4
+  ],
+  "station": [
+   6,
+   20,
+   33,
+   45
+  ],
+  "light_blue": [
+   7,
+   8,
+   11,
+   12
+  ],
+  "utility": [
+   10,
+   17,
+   36
+  ],
+  "pink": [
+   15,
+   16,
+   18,
+   19
+  ],
+  "orange": [
+   21,
+   23,
+   24,
+   25
+  ],
+  "red": [
+   27,
+   29,
+   30,
+   31
+  ],
+  "yellow": [
+   34,
+   35,
+   37,
+   38
+  ],
+  "green": [
+   40,
+   41,
+   42,
+   44
+  ],
+  "dark_blue": [
+   48,
+   49,
+   51
+  ]
+ },
+ "spaces": [
+  {
+   "index": 0,
+   "name": "Go",
+   "type": "go",
+   "salary": 200
+  },
+  {
+   "index": 1,
+   "name": "Tannery Lane",
+   "type": "street",
+   "group": "brown",
+   "price": 60,
+   "rent": [
+    2,
+    10,
+    30,
+    90,
+    160,
+    250,
+    750
+   ],
+   "house_cost": 50,
+   "hotel_cost": 50,
+   "skyscraper_cost": 50,
+   "mortgage": 30
+  },
+  {
+   "index": 2,
+   "name": "Community Fund",
+   "type": "community_chest"
+  },
+  {
+   "index": 3,
+   "name": "Brickworks Road",
+   "type": "street",
+   "group": "brown",
+   "price": 60,
+   "rent": [
+    4,
+    20,
+    60,
+    180,
+    320,
+    450,
+    950
+   ],
+   "house_cost": 50,
+   "hotel_cost": 50,
+   "skyscraper_cost": 50,
+   "mortgage": 30
+  },
+  {
+   "index": 4,
+   "name": "Foundry Yard",
+   "type": "street",
+   "group": "brown",
+   "price": 60,
+   "rent": [
+    4,
+    20,
+    60,
+    180,
+    320,
+    450,
+    950
+   ],
+   "house_cost": 50,
+   "hotel_cost": 50,
+   "skyscraper_cost": 50,
+   "mortgage": 30
+  },
+  {
+   "index": 5,
+   "name": "Income Tax",
+   "type": "tax",
+   "amount": 200
+  },
+  {
+   "index": 6,
+   "name": "Old Town Station",
+   "type": "station",
+   "price": 200,
+   "mortgage": 100,
+   "rent": [
+    25,
+    50,
+    100,
+    200
+   ],
+   "depot_cost": 100,
+   "depot_sell": 50,
+   "depot_multiplier": 2,
+   "group": "station"
+  },
+  {
+   "index": 7,
+   "name": "Weavers Lane",
+   "type": "street",
+   "group": "light_blue",
+   "price": 100,
+   "rent": [
+    6,
+    30,
+    90,
+    270,
+    400,
+    550,
+    1050
+   ],
+   "house_cost": 50,
+   "hotel_cost": 50,
+   "skyscraper_cost": 50,
+   "mortgage": 50
+  },
+  {
+   "index": 8,
+   "name": "Cobbler Street",
+   "type": "street",
+   "group": "light_blue",
+   "price": 100,
+   "rent": [
+    6,
+    30,
+    90,
+    270,
+    400,
+    550,
+    1050
+   ],
+   "house_cost": 50,
+   "hotel_cost": 50,
+   "skyscraper_cost": 50,
+   "mortgage": 50
+  },
+  {
+   "index": 9,
+   "name": "Chance",
+   "type": "chance"
+  },
+  {
+   "index": 10,
+   "name": "Gas Plant",
+   "type": "utility",
+   "price": 150,
+   "mortgage": 75,
+   "rent_multiplier": [
+    4,
+    10,
+    20
+   ],
+   "group": "utility"
+  },
+  {
+   "index": 11,
+   "name": "Chapel Row",
+   "type": "street",
+   "group": "light_blue",
+   "price": 120,
+   "rent": [
+    8,
+    40,
+    100,
+    300,
+    450,
+    600,
+    1100
+   ],
+   "house_cost": 50,
+   "hotel_cost": 50,
+   "skyscraper_cost": 50,
+   "mortgage": 60
+  },
+  {
+   "index": 12,
+   "name": "Wool Market",
+   "type": "street",
+   "group": "light_blue",
+   "price": 120,
+   "rent": [
+    8,
+    40,
+    100,
+    300,
+    450,
+    600,
+    1100
+   ],
+   "house_cost": 50,
+   "hotel_cost": 50,
+   "skyscraper_cost": 50,
+   "mortgage": 60
+  },
+  {
+   "index": 13,
+   "name": "Jail",
+   "type": "jail",
+   "fine": 50
+  },
+  {
+   "index": 14,
+   "name": "Auction",
+   "type": "auction"
+  },
+  {
+   "index": 15,
+   "name": "Mill Lane",
+   "type": "street",
+   "group": "pink",
+   "price": 140,
+   "rent": [
+    10,
+    50,
+    150,
+    450,
+    625,
+    750,
+    1250
+   ],
+   "house_cost": 100,
+   "hotel_cost": 100,
+   "skyscraper_cost": 100,
+   "mortgage": 70
+  },
+  {
+   "index": 16,
+   "name": "Lock Street",
+   "type": "street",
+   "group": "pink",
+   "price": 140,
+   "rent": [
+    10,
+    50,
+    150,
+    450,
+    625,
+    750,
+    1250
+   ],
+   "house_cost": 100,
+   "hotel_cost": 100,
+   "skyscraper_cost": 100,
+   "mortgage": 70
+  },
+  {
+   "index": 17,
+   "name": "Power Station",
+   "type": "utility",
+   "price": 150,
+   "mortgage": 75,
+   "rent_multiplier": [
+    4,
+    10,
+    20
+   ],
+   "group": "utility"
+  },
+  {
+   "index": 18,
+   "name": "Towpath Walk",
+   "type": "street",
+   "group": "pink",
+   "price": 160,
+   "rent": [
+    12,
+    60,
+    180,
+    500,
+    700,
+    900,
+    1400
+   ],
+   "house_cost": 100,
+   "hotel_cost": 100,
+   "skyscraper_cost": 100,
+   "mortgage": 80
+  },
+  {
+   "index": 19,
+   "name": "Wharf Road",
+   "type": "street",
+   "group": "pink",
+   "price": 160,
+   "rent": [
+    12,
+    60,
+    180,
+    500,
+    700,
+    900,
+    1400
+   ],
+   "house_cost": 100,
+   "hotel_cost": 100,
+   "skyscraper_cost": 100,
+   "mortgage": 80
+  },
+  {
+   "index": 20,
+   "name": "Canal Station",
+   "type": "station",
+   "price": 200,
+   "mortgage": 100,
+   "rent": [
+    25,
+    50,
+    100,
+    200
+   ],
+   "depot_cost": 100,
+   "depot_sell": 50,
+   "depot_multiplier": 2,
+   "group": "station"
+  },
+  {
+   "index": 21,
+   "name": "College Road",
+   "type": "street",
+   "group": "orange",
+   "price": 180,
+   "rent": [
+    14,
+    70,
+    200,
+    550,
+    750,
+    950,
+    1450
+   ],
+   "house_cost": 100,
+   "hotel_cost": 100,
+   "skyscraper_cost": 100,
+   "mortgage": 90
+  },
+  {
+   "index": 22,
+   "name": "Community Fund",
+   "type": "community_chest"
+  },
+  {
+   "index": 23,
+   "name": "Scholars Walk",
+   "type": "street",
+   "group": "orange",
+   "price": 180,
+   "rent": [
+    14,
+    70,
+    200,
+    550,
+    750,
+    950,
+    1450
+   ],
+   "house_cost": 100,
+   "hotel_cost": 100,
+   "skyscraper_cost": 100,
+   "mortgage": 90
+  },
+  {
+   "index": 24,
+   "name": "Library Lane",
+   "type": "street",
+   "group": "orange",
+   "price": 200,
+   "rent": [
+    16,
+    80,
+    220,
+    600,
+    800,
+    1000,
+    1500
+   ],
+   "house_cost": 100,
+   "hotel_cost": 100,
+   "skyscraper_cost": 100,
+   "mortgage": 100
+  },
+  {
+   "index": 25,
+   "name": "Observatory Road",
+   "type": "street",
+   "group": "orange",
+   "price": 200,
+   "rent": [
+    16,
+    80,
+    220,
+    600,
+    800,
+    1000,
+    1500
+   ],
+   "house_cost": 100,
+   "hotel_cost": 100,
+   "skyscraper_cost": 100,
+   "mortgage": 100
+  },
+  {
+   "index": 26,
+   "name": "Free Parking",
+   "type": "free_parking"
+  },
+  {
+   "index": 27,
+   "name": "Lantern Street",
+   "type": "street",
+   "group": "red",
+   "price": 220,
+   "rent": [
+    18,
+    90,
+    250,
+    700,
+    875,
+    1050,
+    2050
+   ],
+   "house_cost": 150,
+   "hotel_cost": 150,
+   "skyscraper_cost": 150,
+   "mortgage": 110
+  },
+  {
+   "index": 28,
+   "name": "Chance",
+   "type": "chance"
+  },
+  {
+   "index": 29,
+   "name": "Guild Street",
+   "type": "street",
+   "group": "red",
+   "price": 220,
+   "rent": [
+    18,
+    90,
+    250,
+    700,
+    875,
+    1050,
+    2050
+   ],
+   "house_cost": 150,
+   "hotel_cost": 150,
+   "skyscraper_cost": 150,
+   "mortgage": 110
+  },
+  {
+   "index": 30,
+   "name": "Clocktower Square",
+   "type": "street",
+   "group": "red",
+   "price": 240,
+   "rent": [
+    20,
+    100,
+    300,
+    750,
+    925,
+    1100,
+    2100
+   ],
+   "house_cost": 150,
+   "hotel_cost": 150,
+   "skyscraper_cost": 150,
+   "mortgage": 120
+  },
+  {
+   "index": 31,
+   "name": "Belfry Lane",
+   "type": "street",
+   "group": "red",
+   "price": 240,
+   "rent": [
+    20,
+    100,
+    300,
+    750,
+    925,
+    1100,
+    2100
+   ],
+   "house_cost": 150,
+   "hotel_cost": 150,
+   "skyscraper_cost": 150,
+   "mortgage": 120
+  },
+  {
+   "index": 32,
+   "name": "Bus Ticket",
+   "type": "bus_ticket"
+  },
+  {
+   "index": 33,
+   "name": "Market Station",
+   "type": "station",
+   "price": 200,
+   "mortgage": 100,
+   "rent": [
+    25,
+    50,
+    100,
+    200
+   ],
+   "depot_cost": 100,
+   "depot_sell": 50,
+   "depot_multiplier": 2,
+   "group": "station"
+  },
+  {
+   "index": 34,
+   "name": "Orchard Avenue",
+   "type": "street",
+   "group": "yellow",
+   "price": 260,
+   "rent": [
+    22,
+    110,
+    330,
+    800,
+    975,
+    1150,
+    2150
+   ],
+   "house_cost": 150,
+   "hotel_cost": 150,
+   "skyscraper_cost": 150,
+   "mortgage": 130
+  },
+  {
+   "index": 35,
+   "name": "Linden Avenue",
+   "type": "street",
+   "group": "yellow",
+   "price": 260,
+   "rent": [
+    22,
+    110,
+    330,
+    800,
+    975,
+    1150,
+    2150
+   ],
+   "house_cost": 150,
+   "hotel_cost": 150,
+   "skyscraper_cost": 150,
+   "mortgage": 130
+  },
+  {
+   "index": 36,
+   "name": "Reservoir",
+   "type": "utility",
+   "price": 150,
+   "mortgage": 75,
+   "rent_multiplier": [
+    4,
+    10,
+    20
+   ],
+   "group": "utility"
+  },
+  {
+   "index": 37,
+   "name": "Rose Garden",
+   "type": "street",
+   "group": "yellow",
+   "price": 280,
+   "rent": [
+    24,
+    120,
+    360,
+    850,
+    1025,
+    1200,
+    2200
+   ],
+   "house_cost": 150,
+   "hotel_cost": 150,
+   "skyscraper_cost": 150,
+   "mortgage": 140
+  },
+  {
+   "index": 38,
+   "name": "Meadow Crescent",
+   "type": "street",
+   "group": "yellow",
+   "price": 280,
+   "rent": [
+    24,
+    120,
+    360,
+    850,
+    1025,
+    1200,
+    2200
+   ],
+   "house_cost": 150,
+   "hotel_cost": 150,
+   "skyscraper_cost": 150,
+   "mortgage": 140
+  },
+  {
+   "index": 39,
+   "name": "Go to Jail",
+   "type": "go_to_jail"
+  },
+  {
+   "index": 40,
+   "name": "Hillside Road",
+   "type": "street",
+   "group": "green",
+   "price": 300,
+   "rent": [
+    26,
+    130,
+    390,
+    900,
+    1100,
+    1275,
+    2275
+   ],
+   "house_cost": 200,
+   "hotel_cost": 200,
+   "skyscraper_cost": 200,
+   "mortgage": 150
+  },
+  {
+   "index": 41,
+   "name": "Windmill Hill",
+   "type": "street",
+   "group": "green",
+   "price": 300,
+   "rent": [
+    26,
+    130,
+    390,
+    900,
+    1100,
+    1275,
+    2275
+   ],
+   "house_cost": 200,
+   "hotel_cost": 200,
+   "skyscraper_cost": 200,
+   "mortgage": 150
+  },
+  {
+   "index": 42,
+   "name": "Juniper Heights",
+   "type": "street",
+   "group": "green",
+   "price": 320,
+   "rent": [
+    28,
+    150,
+    450,
+    1000,
+    1200,
+    1400,
+    2400
+   ],
+   "house_cost": 200,
+   "hotel_cost": 200,
+   "skyscraper_cost": 200,
+   "mortgage": 160
+  },
+  {
+   "index": 43,
+   "name": "Community Fund",
+   "type": "community_chest"
+  },
+  {
+   "index": 44,
+   "name": "Kestrel Ridge",
+   "type": "street",
+   "group": "green",
+   "price": 320,
+   "rent": [
+    28,
+    150,
+    450,
+    1000,
+    1200,
+    1400,
+    2400
+   ],
+   "house_cost": 200,
+   "hotel_cost": 200,
+   "skyscraper_cost": 200,
+   "mortgage": 160
+  },
+  {
+   "index": 45,
+   "name": "Harbour Station",
+   "type": "station",
+   "price": 200,
+   "mortgage": 100,
+   "rent": [
+    25,
+    50,
+    100,
+    200
+   ],
+   "depot_cost": 100,
+   "depot_sell": 50,
+   "depot_multiplier": 2,
+   "group": "station"
+  },
+  {
+   "index": 46,
+   "name": "Chance",
+   "type": "chance"
+  },
+  {
+   "index": 47,
+   "name": "Birthday Gift",
+   "type": "birthday_gift",
+   "amount": 100
+  },
+  {
+   "index": 48,
+   "name": "Harbour Row",
+   "type": "street",
+   "group": "dark_blue",
+   "price": 350,
+   "rent": [
+    35,
+    175,
+    500,
+    1100,
+    1300,
+    1500,
+    2500
+   ],
+   "house_cost": 200,
+   "hotel_cost": 200,
+   "skyscraper_cost": 200,
+   "mortgage": 175
+  },
+  {
+   "index": 49,
+   "name": "Lighthouse Point",
+   "type": "street",
+   "group": "dark_blue",
+   "price": 350,
+   "rent": [
+    35,
+    175,
+    500,
+    1100,
+    1300,
+    1500,
+    2500
+   ],
+   "house_cost": 200,
+   "hotel_cost": 200,
+   "skyscraper_cost": 200,
+   "mortgage": 175
+  },
+  {
+   "index": 50,
+   "name": "Bank Deposit",
+   "type": "tax",
+   "amount": 100
+  },
+  {
+   "index": 51,
+   "name": "Cliff Terrace",
+   "type": "street",
+   "group": "dark_blue",
+   "price": 400,
+   "rent": [
+    50,
+    200,
+    600,
+    1400,
+    1700,
+    2000,
+    3000
+   ],
+   "house_cost": 200,
+   "hotel_cost": 200,
+   "skyscraper_cost": 200,
+   "mortgage": 200
+  }
+ ],
+ "locales": {
+  "de": {
+   "name": "Groß",
+   "spaces": {
+    "0": "Los",
+    "1": "Gerbergasse",
+    "2": "Gemeinschaftskasse",
+    "3": "Ziegeleiweg",
+    "4": "Gießereihof",
+    "5": "Einkommensteuer",
+    "6": "Altstadtbahnhof",
+    "7": "Webergasse",
+    "8": "Schustergasse",
+    "9": "Zufall",
+    "10": "Gasanstalt",
+    "11": "Kapellenweg",
+    "12": "Wollmarkt",
+    "13": "Gefängnis",
+    "14": "Auktion",
+    "15": "Mühlenweg",
+    "16": "Schleusenstraße",
+    "17": "Kraftwerk",
+    "18": "Treidelpfad",
+    "19": "Kaistraße",
+    "20": "Kanalbahnhof",
+    "21": "Hochschulweg",
+    "22": "Gemeinschaftskasse",
+    "23": "Gelehrtengasse",
+    "24": "Bibliotheksgasse",
+    "25": "Sternwartenweg",
+    "26": "Freies Parken",
+    "27": "Laternengasse",
+    "28": "Zufall",
+    "29": "Gildestraße",
+    "30": "Uhrturmplatz",
+    "31": "Glockengasse",
+    "32": "Busticket",
+    "33": "Marktbahnhof",
+    "34": "Am Obstgarten",
+    "35": "Lindenallee",
+    "36": "Talsperre",
+    "37": "Rosengarten",
+    "38": "Wiesenring",
+    "39": "Ins Gefängnis",
+    "40": "Am Hang",
+    "41": "Windmühlenberg",
+    "42": "Wacholderhöhe",
+    "43": "Gemeinschaftskasse",
+    "44": "Falkenrain",
+    "45": "Hafenbahnhof",
+    "46": "Zufall",
+    "47": "Geburtstagsgeschenk",
+    "48": "Hafenkante",
+    "49": "Leuchtturmspitze",
+    "50": "Bankeinzahlung",
+    "51": "Klippenweg"
+   }
+  }
+ }
+}

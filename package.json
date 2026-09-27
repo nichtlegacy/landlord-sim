@@ -1,0 +1,53 @@
+{
+  "name": "landlord-sim",
+  "version": "0.1.0",
+  "description": "Monte Carlo simulator for property-trading board games: win chances from any game state, with house rules, trading bots and a web UI.",
+  "license": "MIT",
+  "author": "nichtlegacy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichtlegacy/landlord-sim.git"
+  },
+  "homepage": "https://github.com/nichtlegacy/landlord-sim#readme",
+  "bugs": {
+    "url": "https://github.com/nichtlegacy/landlord-sim/issues"
+  },
+  "keywords": [
+    "board-game",
+    "monte-carlo",
+    "simulation",
+    "property-trading",
+    "house-rules",
+    "react"
+  ],
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "sim": "tsx src/sim/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "bench": "tsx src/sim/bench.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/geist-mono": "^5.3.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

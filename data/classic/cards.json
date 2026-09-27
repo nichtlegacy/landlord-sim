@@ -1,0 +1,303 @@
+{
+ "chance": [
+  {
+   "id": "K1",
+   "text": "Advance to Go and collect $200.",
+   "effect": {
+    "type": "move_to",
+    "target": 0
+   }
+  },
+  {
+   "id": "K2",
+   "text": "Meet a friend at Clocktower Square. Collect $200 if you pass Go.",
+   "effect": {
+    "type": "move_to",
+    "target": 24
+   }
+  },
+  {
+   "id": "K3",
+   "text": "Enjoy the view from Lighthouse Point. Collect $200 if you pass Go.",
+   "effect": {
+    "type": "move_to",
+    "target": 39
+   }
+  },
+  {
+   "id": "K4",
+   "text": "Take a walk down Mill Lane. Collect $200 if you pass Go.",
+   "effect": {
+    "type": "move_to",
+    "target": 11
+   }
+  },
+  {
+   "id": "K5",
+   "text": "Hop on at the nearest station. If nobody owns it, you may buy it; otherwise pay the owner double rent.",
+   "effect": {
+    "type": "move_nearest",
+    "kind": "station",
+    "rent_multiplier": 2
+   }
+  },
+  {
+   "id": "K6",
+   "text": "Hop on at the nearest station. If nobody owns it, you may buy it; otherwise pay the owner double rent.",
+   "effect": {
+    "type": "move_nearest",
+    "kind": "station",
+    "rent_multiplier": 2
+   }
+  },
+  {
+   "id": "K7",
+   "text": "Go to the nearest utility. If nobody owns it, you may buy it; otherwise roll the dice and pay the owner ten times the result.",
+   "effect": {
+    "type": "move_nearest",
+    "kind": "utility",
+    "dice_multiplier": 10
+   }
+  },
+  {
+   "id": "K8",
+   "text": "Your savings earn interest. Collect $50.",
+   "effect": {
+    "type": "collect",
+    "amount": 50
+   }
+  },
+  {
+   "id": "K9",
+   "text": "Out of Jail for free. Keep this card until you need it.",
+   "effect": {
+    "type": "get_out_of_jail_free"
+   }
+  },
+  {
+   "id": "K10",
+   "text": "Step back three spaces.",
+   "effect": {
+    "type": "move_relative",
+    "steps": -3
+   }
+  },
+  {
+   "id": "K11",
+   "text": "Off to Jail! Move there directly and get nothing for passing Go.",
+   "effect": {
+    "type": "go_to_jail"
+   }
+  },
+  {
+   "id": "K12",
+   "text": "Upkeep on your buildings: pay $25 per house and $100 per hotel.",
+   "effect": {
+    "type": "repairs",
+    "per_house": 25,
+    "per_hotel": 100
+   }
+  },
+  {
+   "id": "K13",
+   "text": "Parking ticket. Pay $15.",
+   "effect": {
+    "type": "pay",
+    "amount": 15
+   }
+  },
+  {
+   "id": "K14",
+   "text": "Catch a train from Old Town Station. Collect $200 if you pass Go.",
+   "effect": {
+    "type": "move_to",
+    "target": 5
+   }
+  },
+  {
+   "id": "K15",
+   "text": "You host the street party. Pay each player $50.",
+   "effect": {
+    "type": "pay_each_player",
+    "amount": 50
+   }
+  },
+  {
+   "id": "K16",
+   "text": "Your construction bond pays out. Collect $150.",
+   "effect": {
+    "type": "collect",
+    "amount": 150
+   }
+  }
+ ],
+ "community_chest": [
+  {
+   "id": "K17",
+   "text": "Advance to Go and collect $200.",
+   "effect": {
+    "type": "move_to",
+    "target": 0
+   }
+  },
+  {
+   "id": "K18",
+   "text": "A booking slip at the bank goes your way. Collect $200.",
+   "effect": {
+    "type": "collect",
+    "amount": 200
+   }
+  },
+  {
+   "id": "K19",
+   "text": "Dentist appointment. Pay $50.",
+   "effect": {
+    "type": "pay",
+    "amount": 50
+   }
+  },
+  {
+   "id": "K20",
+   "text": "You sell some old furniture. Collect $50.",
+   "effect": {
+    "type": "collect",
+    "amount": 50
+   }
+  },
+  {
+   "id": "K21",
+   "text": "Out of Jail for free. Keep this card until you need it.",
+   "effect": {
+    "type": "get_out_of_jail_free"
+   }
+  },
+  {
+   "id": "K22",
+   "text": "Off to Jail! Move there directly and get nothing for passing Go.",
+   "effect": {
+    "type": "go_to_jail"
+   }
+  },
+  {
+   "id": "K23",
+   "text": "Your savings jar is full. Collect $100.",
+   "effect": {
+    "type": "collect",
+    "amount": 100
+   }
+  },
+  {
+   "id": "K24",
+   "text": "Tax rebate. Collect $20.",
+   "effect": {
+    "type": "collect",
+    "amount": 20
+   }
+  },
+  {
+   "id": "K25",
+   "text": "It's your birthday! Every player gives you $10.",
+   "effect": {
+    "type": "collect_each_player",
+    "amount": 10
+   }
+  },
+  {
+   "id": "K26",
+   "text": "A pension plan pays out. Collect $100.",
+   "effect": {
+    "type": "collect",
+    "amount": 100
+   }
+  },
+  {
+   "id": "K27",
+   "text": "Vet bill for your pet. Pay $100.",
+   "effect": {
+    "type": "pay",
+    "amount": 100
+   }
+  },
+  {
+   "id": "K28",
+   "text": "Evening class fees. Pay $50.",
+   "effect": {
+    "type": "pay",
+    "amount": 50
+   }
+  },
+  {
+   "id": "K29",
+   "text": "You give a paid talk. Collect $25.",
+   "effect": {
+    "type": "collect",
+    "amount": 25
+   }
+  },
+  {
+   "id": "K30",
+   "text": "Road works outside your properties: pay $40 per house and $115 per hotel.",
+   "effect": {
+    "type": "repairs",
+    "per_house": 40,
+    "per_hotel": 115
+   }
+  },
+  {
+   "id": "K31",
+   "text": "Runner-up in the town baking contest. Collect $10.",
+   "effect": {
+    "type": "collect",
+    "amount": 10
+   }
+  },
+  {
+   "id": "K32",
+   "text": "A distant aunt leaves you $100.",
+   "effect": {
+    "type": "collect",
+    "amount": 100
+   }
+  }
+ ],
+ "locales": {
+  "de": {
+   "chance": [
+    "Rücke vor bis Los und kassiere $200.",
+    "Triff dich mit einer Freundin am Uhrturmplatz. Kommst du dabei über Los, erhältst du $200.",
+    "Genieße die Aussicht von der Leuchtturmspitze. Kommst du dabei über Los, erhältst du $200.",
+    "Spaziere den Mühlenweg entlang. Kommst du dabei über Los, erhältst du $200.",
+    "Steig am nächsten Bahnhof zu. Gehört er niemandem, darfst du ihn kaufen; sonst zahlst du dem Besitzer die doppelte Miete.",
+    "Steig am nächsten Bahnhof zu. Gehört er niemandem, darfst du ihn kaufen; sonst zahlst du dem Besitzer die doppelte Miete.",
+    "Gehe zum nächsten Versorgungswerk. Gehört es niemandem, darfst du es kaufen; sonst würfelst du und zahlst dem Besitzer das Zehnfache der Augen.",
+    "Deine Ersparnisse bringen Zinsen. Du erhältst $50.",
+    "Du kommst ohne Strafe aus dem Gefängnis. Behalte die Karte, bis du sie brauchst.",
+    "Gehe drei Felder zurück.",
+    "Ab ins Gefängnis! Du ziehst direkt dorthin und bekommst für Los nichts.",
+    "Instandhaltung deiner Gebäude: Zahle $25 pro Haus und $100 pro Hotel.",
+    "Strafzettel fürs Falschparken. Zahle $15.",
+    "Fahre zum Altstadtbahnhof. Kommst du dabei über Los, erhältst du $200.",
+    "Du richtest das Straßenfest aus. Zahle jedem Mitspieler $50.",
+    "Deine Bauanleihe wird ausgezahlt. Du erhältst $150."
+   ],
+   "community_chest": [
+    "Rücke vor bis Los und kassiere $200.",
+    "Ein Buchungsfehler der Bank geht zu deinen Gunsten. Du erhältst $200.",
+    "Zahnarzttermin. Zahle $50.",
+    "Du verkaufst alte Möbel. Du erhältst $50.",
+    "Du kommst ohne Strafe aus dem Gefängnis. Behalte die Karte, bis du sie brauchst.",
+    "Ab ins Gefängnis! Du ziehst direkt dorthin und bekommst für Los nichts.",
+    "Dein Sparschwein ist voll. Du erhältst $100.",
+    "Steuerrückzahlung. Du erhältst $20.",
+    "Du hast Geburtstag! Jeder Mitspieler schenkt dir $10.",
+    "Eine Rentenversicherung zahlt aus. Du erhältst $100.",
+    "Tierarztrechnung für dein Haustier. Zahle $100.",
+    "Gebühr für den Abendkurs. Zahle $50.",
+    "Du hältst einen bezahlten Vortrag. Du erhältst $25.",
+    "Straßenbau vor deinen Grundstücken: Zahle $40 pro Haus und $115 pro Hotel.",
+    "Zweiter Platz beim Backwettbewerb der Stadt. Du erhältst $10.",
+    "Eine entfernte Tante vermacht dir $100."
+   ]
+  }
+ }
+}
