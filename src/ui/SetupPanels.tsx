@@ -369,7 +369,7 @@ export function TableCard({ setup, onChange }: Props) {
       </label>
       <div className="button-row">
         <button className="btn btn-sm" onClick={() => onChange(presetExample())}>{t('table.example')}</button>
-        <button className="btn btn-sm" onClick={() => onChange(presetNewGame(setup.editionId))}>{t('table.newGame')}</button>
+        <button className="btn btn-sm" data-umami-event="new-game" onClick={() => onChange(presetNewGame(setup.editionId))}>{t('table.newGame')}</button>
         <AiImport setup={setup} onChange={onChange} />
         <ExportImport setup={setup} onChange={onChange} />
       </div>
