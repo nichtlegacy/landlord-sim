@@ -20,13 +20,15 @@ const TYPES: Record<string, string> = {
   '.xml': 'application/xml; charset=utf-8', '.webmanifest': 'application/manifest+json; charset=utf-8',
 };
 
-// the only inline script (theme before first paint) is allowed by its hash, everything else must be same-origin
+// the only inline script (theme before first paint) is allowed by its hash; everything else is same-origin,
+// except the Umami script and its collect endpoint on insights.nichtlegacy.com
 const indexHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
 const inline = [...indexHtml.matchAll(/<script>([\s\S]*?)<\/script>/g)]
   .map((m) => `'sha256-${crypto.createHash('sha256').update(m[1]).digest('base64')}'`);
+const ANALYTICS = 'https://insights.nichtlegacy.com';
 const CSP = [
-  "default-src 'self'", `script-src 'self' ${inline.join(' ')}`, "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data:", "font-src 'self'", "connect-src 'self'", "worker-src 'self'",
+  "default-src 'self'", `script-src 'self' ${ANALYTICS} ${inline.join(' ')}`, "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data:", "font-src 'self'", `connect-src 'self' ${ANALYTICS}`, "worker-src 'self'",
   "object-src 'none'", "base-uri 'self'", "form-action 'self'", "frame-ancestors 'self'",
 ].join('; ');
 

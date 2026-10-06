@@ -88,7 +88,7 @@ export function ResultSummary(props: {
           {live ? (
             <button key="cancel" className="btn" onClick={props.onCancel}>{t('common.cancel')}</button>
           ) : (
-            <button key="run" className="btn btn-primary" onClick={props.onRun}>{stats ? t('summary.rerun') : t('summary.run')}</button>
+            <button key="run" className="btn btn-primary" data-umami-event="run-simulation" onClick={props.onRun}>{stats ? t('summary.rerun') : t('summary.run')}</button>
           )}
           {props.controls}
         </div>
